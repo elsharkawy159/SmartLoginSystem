@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="navbar p-4 d-flex justify-content-between container">
+            <a href="index.html" class="text-decoration-none text-light"><h5>SMART LOGIN</h5></a>
+            <!-- <a class="btn btn-outline-primary" href="index.html">Log out</a> -->
+        </div>
+    </nav>
+<div class="container">
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="section col-md-8 p-5">
+            
+            <h1 class="text-center">Smart Login System</h1>
+
+            
+    <div class="mb-4 mt-4">
+        <input type="text" class="form-control" id="signUpname" aria-describedby="emailHelp" placeholder="Enter your Name">
+        <p id="namecheck" class="text-danger ms-3 mt-1 d-none">Invalid Name.</p>
+
+    </div>
+    <div class="mb-4 mt-4">
+        <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp" placeholder="Enter your Email address">
+        <p id="emailcheck" class="text-danger ms-3 mt-1 d-none">Invalid E-mail address.</p>
+
+    </div>
+    <div class="mb-4">
+        <input type="password" class="form-control" id="signUpPassword" placeholder="Enter your Password">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="termscheck">
+        <label class="form-check-label text-light" for="termscheck">I accept the <a href="#" id="TandC" class="text-decoration-none">Terms/Conditions</a></label>
+    </div>
+    
+    <button id="signUpbtn" onclick="signUp()" type="submit" class="btn btn-outline-primary w-100 fw-semibold mb-4">Sign Up</button>
+            
+            <p id="success" class="text-success text-center fw-bold d-none">Account has been registered sucessfully ✅</p>
+            <p id="redirect" class="text-success text-center fw-bold d-none">The page will redirect after 2 seconds</p>
+            <h6 class="text-white fw-normal text-center">Already have an account? <a href="index.html" class="text-decoration-none text-light fw-bold">Login</a></h6>
+        </div>
+    </div>
+</div>
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
